@@ -43,7 +43,7 @@ function CropDiseaseDetector() {
     setError(null);
 
     try {
-      const response = await axios.post('https://plantdiseaseapi-2oyv4uz2s-vivek-gaurs-projects.vercel.app/', formData, {
+      const response = await axios.post('https://plantdiseaseapi.vercel.app/predict', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
